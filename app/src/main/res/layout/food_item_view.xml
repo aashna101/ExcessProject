@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/foodImg"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/restaurant"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layout1"
+        android:layout_below="@+id/foodImg">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="3dp"
+            android:paddingEnd="2dp"
+            android:layout_weight="3"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:id="@+id/food_name_txt" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:padding="4dp"
+            android:numStars="5"
+            android:stepSize="1"
+            android:rating="3"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="3dp"
+            android:paddingStart="2dp"/>
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout1">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:paddingStart="3dp"
+            android:paddingEnd="2dp"
+            android:textSize="14sp"
+            android:id="@+id/statusTxt"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:id="@+id/distanceTxt"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textSize="14sp"
+            android:textAlignment="viewEnd"
+            android:paddingStart="2dp"
+            android:paddingEnd="3dp"
+            android:layout_gravity="end"
+            android:id="@+id/offerTxt"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
